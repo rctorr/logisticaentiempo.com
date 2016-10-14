@@ -1,0 +1,352 @@
+@import url("font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
+
+body {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: "Roboto";
+}
+
+div#pagina {
+    width: 100%;
+    margin: 0px auto;
+}
+
+/*----------- Inicia HEADER ---------*/
+
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 1px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: fixed;
+}
+
+div#cazul {
+    width: 100%;
+    height: 25px;
+    background-color:#2e63a7;
+}
+
+
+div#logotipo {
+    width:100%;
+    height: auto;
+    background-color: white;
+}
+
+header img {
+    margin: auto 0px;
+    padding: 15px;
+}
+
+
+/* ----------- Inicia NAV -------- */
+
+
+nav {
+    width: 100%;
+    height: auto;
+    background-color:#d6ad6b;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+    padding:0;
+    margin: auto 0px;
+    display: inline-block;
+}
+
+nav li {
+    width: 100px;
+    padding: 5px 0px;
+    background-color: #d6ad6b;
+    float: left;
+    margin: auto 0px;
+    font-size: 14px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight:800;
+    -webkit-transition: all 800ms;
+    -moz-transition: all 800ms;
+    -ms-transition: all 800ms;
+    -o-transition: all 800ms;
+    transition: all 800ms;
+}
+
+nav li a:hover, header span a:hover, footer a:hover {
+    text-decoration: none;
+    color: #705839;
+}
+
+/*------- Inicia SECTION INICIO -----*/
+
+section#inicio{
+    width: 100%;
+    height: 600px;
+}
+
+iframe {
+    width: 100%;
+    height: 600px;
+}
+
+/*------- Inicia SECTION CONOCENOS---- */
+
+section#conocenos{
+    width: 100%;
+    height: 600px;
+    background-color: #fff;
+}
+
+.somos, .ofrecemos, .benef{
+    width: 30%;
+    height: 200px;
+    display: inline-block;
+    padding: 15px 0px 50px 0px;
+    margin-top: 50px;
+
+}
+
+.c1,.c2 {
+    height: 10px;
+    margin-top: 0;
+}
+
+.c1 {
+    width: 100%;
+    background-color: #39354c;
+}
+
+.c2 {
+    width: 100%;
+    background-color: #2c5282;
+
+}
+
+.c3 {
+    width: 100%;
+    height: 55px;
+    background-color: #cccccc;
+}
+
+h1 {
+    width: 25%;
+    height: 25px;
+    margin-top: 0px;
+    padding: 5px;
+    font-size: 35px;
+    color: #39354c;
+}
+
+div#simg {
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
+}
+
+div#stxt{
+    width: 100%;
+    height: 100px;
+    margin-top: 0px;
+
+}
+
+hr {
+    background-color: black;
+    height: 3px;
+    width: 80%;
+    margin-top: -10px;
+}
+
+p {
+    text-align: justify;
+    padding: 0px 45px 0px 45px;
+}
+
+img#icsom, img#icofr, img#icoben {
+    width: auto;
+    height: 90px;
+}
+
+
+/*------Inicia SECTION SERVICIOS-----*/
+
+section#servicios{
+    width: 100%;
+    height: 600px;
+    background-color: #2c5282;
+}
+
+.s1, .s2, .s3 {
+    width: 26%;
+    height: 200px;
+    display: inline-block;
+    padding: 15px 0px 50px 0px;
+    margin-top: 70px;
+    margin-right: 18px;
+    margin-left: 18px;
+}
+
+img#icoterr, img#icoalm, img#icopta {
+    width: auto;
+    height: 200px;
+}
+
+div#servimg {
+    width: 100%;
+    height: 200px;
+    margin-top: 0px;
+}
+
+
+div#servtxt {
+    width: 100%;
+    margin-top: 50px;
+    color: #fff;
+}
+
+/*------Inicia SECTION GALERIA-----*/
+
+section#galeria {
+    width: 100%;
+    height: 600px;
+    background-color: #fff;
+    position: relative;
+}
+
+/********** Estilos galería con bootstrap *************/
+
+/* Asignando fondo al caption o contenido sobre la imagen */
+.carousel-caption {
+    right: 1.25em;
+    left: auto;
+    width: 60%;
+    padding: 0;
+}
+
+.bg-caption-black {
+    background-color: rgba(0,0,0,0.3);
+}
+.bg-caption-white {
+    background-color: rgba(255,255,255,0.3);
+}
+.bg-caption-white-40 {
+    background-color: rgba(255,255,255,0.4);
+}
+.bg-caption-white-50 {
+    background-color: rgba(255,255,255,0.5);
+}
+
+/* Esto es para hacer que el texto de las miniaturas se muestre como bloque */
+#myCarousel .nav a {
+	padding-left: 0;
+    padding-right: 0;
+}
+
+#myCarousel .nav a img {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+  #myCarousel .nav-justified > li {
+    display: table-cell;
+    width: 1%;
+/*    float: left !important;*/
+  }
+  #myCarousel .nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+
+/*------Inicia SECTION ALIANZAS -----*/
+
+section#alianzas {
+    width: 100%;
+    height: 600px;
+    background-color: #fff;
+}
+
+aside#alian {
+    width: 100%;
+    height: 250px;
+    margin-top: 120px;
+}
+
+.ali1, .ali2, .ali3, .ali4, .ali5, .ali6 {
+    width: 15%;
+    height: 200px;
+    display: inline-block;
+    padding: 5px 0px 5px 0px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+img#icoal {
+    width: 80%;
+    height: 160px;
+}
+
+
+/*------Inicia SECTION CONTACTO -----*/
+
+section#contacto {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+.contac {
+    width: 48%;
+    height: auto;
+    display: inline-block;
+
+}
+
+h4 {
+    text-align: justify;
+    margin-top: 0px;
+}
+
+p{
+    margin-top: 2px;
+}
+
+div#maps {
+    width: 100%;
+    height: auto;
+}
+
+input, textarea {
+    width: 78%;
+    padding: 3px;
+    margin-top: 2px;
+}
+
+/* Inicia FOOTER */
+
+footer {
+    width: 100%;
+    height: 55px;
+    background-color: firebrick;
+    margin-top: 15px;
+    color: #fff;
+     background-color: #2e63a7;
+}
+
+h5 {
+    font-style: italic;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 5px 0px 0px 0px;
+
+}
+
+/* Tuneado de Bootstrap */
