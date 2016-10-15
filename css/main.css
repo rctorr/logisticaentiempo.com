@@ -315,13 +315,13 @@ section#galeria {
     left: 0;
     right: 0;
     color: #ccc;
-    font-size: 1.5em;
     background-color: rgba(0, 0, 0, 0.5);
-    padding-top: 1em;
+    padding-top: 1.5em;
 }
 
 #galeria1 .miniatura a .cover h3 {
     display: inline-block;
+    font-size: 1.5em;
     margin: 0;
     border-bottom: 1px solid #ccc;
 }
