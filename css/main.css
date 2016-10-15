@@ -217,7 +217,7 @@ div#servtxt {
 
 section#galeria {
     width: 100%;
-    height: 600px;
+    height: 650px;
     background-color: #fff;
     position: relative;
 }
@@ -245,25 +245,85 @@ section#galeria {
     background-color: rgba(255,255,255,0.5);
 }
 
-/* Esto es para hacer que el texto de las miniaturas se muestre como bloque */
-#myCarousel .nav a {
-	padding-left: 0;
-    padding-right: 0;
+#galeria1 {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
-
-#myCarousel .nav a img {
+/* Para hacer que la imagen principal ocupe todo el ancho */
+#galeria1 .item img {
     width: 100%;
 }
 
-@media (min-width: 768px) {
-  #myCarousel .nav-justified > li {
-    display: table-cell;
-    width: 1%;
-/*    float: left !important;*/
-  }
-  #myCarousel .nav-justified > li > a {
-    margin-bottom: 0;
-  }
+/* Clase para identificar una miniatura activa */
+#galeria1 .miniatura a {
+    border: 3px solid #fff;
+    display: block;
+    position: relative;
+    -ms-transition: border 750ms;
+    -webkit-transition: border 750ms;
+    -moz-transition: border 750ms;
+    -o-transition: border 750ms;
+    transition: border 750ms;
+}
+
+#galeria1 .miniatura a .cover {
+    -ms-transition: all 750ms;
+    -webkit-transition: all 750ms;
+    -o-transition: all 750ms;
+    -moz-transition: all 750ms;
+    transition: all 750ms;
+}
+
+#galeria1 .miniatura a .cover h3 {
+    -ms-transition: border 750ms;
+    -webkit-transition: border 750ms;
+    -o-transition: border 750ms;
+    -moz-transition: border 750ms;
+    transition: border 750ms;
+}
+
+#galeria1 .miniatura a:hover {
+    border-color: #ffaa22;
+}
+
+#galeria1 .miniatura a:hover .cover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#galeria1 .miniatura a:hover .cover h3 {
+    border-color: #fff;
+}
+
+#galeria1 .miniatura a.active {
+    border-color: #ffaa22;
+}
+
+#galeria1 .miniatura a.active .cover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#galeria1 .miniatura a.active .cover h3 {
+    border-color: #fff;
+}
+
+#galeria1 .miniatura a .cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #ccc;
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 1em;
+}
+
+#galeria1 .miniatura a .cover h3 {
+    display: inline-block;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
 }
 
 /*------Inicia SECTION ALIANZAS -----*/
@@ -350,3 +410,7 @@ h5 {
 }
 
 /* Tuneado de Bootstrap */
+.center-block {
+    margin-left: auto;
+    margin-right: auto;
+}
