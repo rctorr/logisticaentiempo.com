@@ -7,108 +7,145 @@
 
     <title>Logistica en tiempo</title>
 
-    <!-- Bootstrap -->
+<!-- Bootstrap -->
+    
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
 </head>
+
+    
 <body>
-    <div class="container-fuild" id="pagina">
-       <header>
-           <div id="cazul"> </div>
-           <div id="logotipo">
+    <div id="pagina">
+        <header>
+            <div id="cazul"> </div>
+            <div id="logotipo">
                 <img src="img/justintime.png" >
-           </div>
-           <nav>
-           <ul>
-               <li><a href="">INICIO</a></li>
-               <li><a href="">CONOCENOS</a></li>
-               <li><a href="">SERVICIOS</a></li>
-               <li><a href="">GALERIA</a></li>
-               <li><a href="">ALIANZAS</a></li>
-               <li><a href="">CONTACTO</a></li>
+            </div>
+            
+            
+            <div class="nav">
+                <ul>
+                    <li class="active"> <a href="#inicio">INICIO</a> </li>
+                    <li><a href="#conocenos">CONOCENOS</a></li>
+                    <li><a href="#servicios">SERVICIOS</a></li>
+                    <li><a href="#galeria">GALERIA</a></li>
+                    <li><a href="#alianzas">ALIANZAS</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                </ul>
+      
+            <div class="borderof"></div>
+            </div>
+    
+            <div class="toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </header>
 
-           </ul>
-        </nav>
-
-       </header>
-
-
-       <section id="inicio"> <!--Inicia seccion INICIO -->
+<!-------- Inicia seccion INICIO -------->
+       <section class="secciones" id="inicio"> 
            <div id="video">
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/HL6aPC5cIYI" frameborder="0" allowfullscreen></iframe>
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/HL6aPC5cIYI" frameborder="0" allowfullscreen></iframe>              </div>
+       </section>
+        
+<!-------- Termina seccion INICIO -------------------------->
+<!-------- Inicia seccion CONOCENOS ------------------------>
 
-           </div>
-       </section> <!--Termina seccion INICIO ----------------------------------------------------------------------------------------------------------------------->
-
-       <section id="conocenos"> <!--Inicia seccion CONOCENOS -->
-           <div class="c1"></div>
-           <div class="c2"></div>
-           <div class="c3">
+        <section class="secciones" id="conocenos"> 
+            <div class="barritas" id="c1"></div>
+            <div class="barritas" id="c2"></div>
+            <div id="c3">
                 <h1>CONÓCENOS</h1>
-           </div>
-
-
-           <div class="somos">
-               <div id="simg">
-                   <img id="icsom" src="img/icsom.png">
-               </div>
-               <div id="stxt">
-                    <h3>QUIÉNES SOMOS</h3><hr></hr>
-                    <p>Soluciones en la cadena de suministros cumpliendo con las normas y procesos necesarios para el almacenaje y traslado de sus mercancías.</p>
-               </div>
-           </div>
-
-           <div class="ofrecemos">
-               <div id="simg">
-                   <img id="icofr" src="img/icofr.png">
-               </div>
-               <div id="stxt">
-                   <h3>QUÉ OFRECEMOS</h3><hr></hr>
-                    <p>Confianza, seguridad y puntualidad en el manejo de sus mercancías</p>
-
-               </div>
             </div>
-           <div class="benef">
-                <div id="simg">
-                     <img id="icoben" src="img/icben.png">
-               </div>
-               <div id="stxt">
-                   <h3>VALOR AGREGADO</h3><hr></hr>
-                    <p>Seguro de carga
-Acceso la plataforma satelital en tiempo real
-Coordinación de principio a fin.
- </p>
 
-               </div>
-            </div>
+           <section id="serviceArea">           <!-- Empieza seccion de enmedio -->
+               <div class="container text-center">
+                   <div class="row">
+                       <div class="col-sm-4">
+                           <div class="service">
+                               <div class="i-overlay">
+                                   <img src="img/icsom.png" class="img-responsive" width="100"/>
+                               </div>
+                               <h3>QUIÉNES SOMOS</h3>
+                               <p>Soluciones en la cadena de suministros cumpliendo con las normas y procesos necesarios para el almacenaje y traslado de sus mercancías.</p>
+                           </div>
+                       </div>
+                       
+                       <div class="col-sm-4">
+                           <div class="service">
+                               <div class="i-overlay">
+                                   <img src="img/icofr.png" class="img-responsive"  width="80"/>
+                               </div>
+                                   <h3>QUÉ OFRECEMOS</h3>
+                                   <p>Confianza, seguridad y puntualidad en el manejo de sus mercancías.</p>
+                               </div>
+                       </div>
+                            
+                       <div class="col-sm-4">
+                                   <div class="service">
+                                       <div class="i-overlay">
+                                           <img src="img/icben.png" class="img-responsive" width="100" />
+                                       </div>
+                                       <h3>VALOR AGREGADO </h3>
+                                       
+                                       <p>Seguro de carga, acceso la plataforma satelital en tiempo real,oordinación de principio a fin.</p>
+                                   </div>
+                               </div>
+
+                               </div>
+                           </div>
+           </section><!-- termina seccion de enmedio -->
+           
 
        </section> <!-- Termina seccion CONOCENOS ------------------------------------------------------------------------------------------------------------------>
 
-
-
-       <section id="servicios"> <!--Inicia seccion SERVICIOS -->
-           <div class="c1"></div>
-           <div class="c2"></div>
-           <div class="c3">
+<section class="secciones" id="servicios"> <!--Inicia seccion SERVICIOS -->
+         <div class="barritas" id="c1"></div>
+         <div class="barritas" id="c2"></div>
+         <div id="c3">
                 <h1>SERVICIOS</h1>
            </div>
 
+           <div class="row"><!-- Inicia Columna para los servicios en bootsrap-->
 
            <div class="s1">  <!--Inicia S1 -->
                <div id="servimg">
                    <img id="icoterr" src="img/icoterr.png">
                </div>
                <div id="servtxt">
-                   <h3>TRANSPORTE TERRESTRE</h3>
+                   <a class="button" href="#popup1">TRANSPORTE TERRESTRE</a>
+      <div id="popup1" class="overlay">
+          <div class="popup">
+		      <h2>TRANSPORTE TERRESTRE</h2>
+		          <a class="close" href="#servicios">&times;</a>
+		              <div class="content">
+                          <p>
+                          Por que sabemos de su necesidad, JUST IN TIME LOGISTICS, Pone a su ordenes una flotilla de unidades modernas con personal calificado y certificado (R-CONTROL), impartiendo capacitaciones continuas a todo el personal.  Ofreciendo: </p>                          
+                       <p>* Gama de unidades 1.5ton, 3.5ton, Rabon, Thorton, Tractocamión, caja seca y refrigerada.</p> 
+                        <p> * Seguros de carga </p> 
+                        <p> * Rastreo satelital </p>
+                        <p> * Continua comunicación </p>                               <p> * Reportes vía correo y teléfono</p>
+                         <p> * Entrega de evidencias inmediata</p>
+                         <p> * Equipo básico en unidades (casco, chaleco reflejante, gogles, faja de carga, guantes y botas de seguridad).</p>
+                         <p> * Seguro social de los Operadores siempre vigente en las unidades</p>
+                         <p> * Certificado de fumigaciones </p>
+                         <p> * Placas Federales, cartas porte, bitácora de descansos, bitácoras de Mtto.</p>
+                         <p> * Thermograficadores  “red fría”</p>
+
+		              </div>
+	       </div>
+     </div>
+                
                </div>
            </div> <!--Termina S1 -->
 
@@ -119,7 +156,25 @@ Coordinación de principio a fin.
                     <img id="icoalm" src="img/icoalm.png">
                </div>
                <div id="servtxt">
-                   <h3>ALMACEN Y DISTRIBUCIÓN</h3>
+                   <a class="button" href="#popup1">ALMACEN Y DISTRIBUCIÓN</a>
+      <div id="popup1" class="overlay">
+          <div class="popup">
+		      <h2>ALMACEN Y DISTRIBUCIÓN</h2>
+		          <a class="close" href="#servicios">&times;</a>
+		              <div class="content">
+                          <p>
+                          Contamos con una solida alianza para poder almacenar su mercancía realizando el inventario de sus productos a distribuir con un alcance Nacional e internacional, de manera rápida eficiente y confiable siempre teniéndolo informado con estatus de sus envíos.
+                          </p>                          
+                           <p>
+                            * Inventario
+                          </p> 
+                          <p> * Armado de surtido </p> 
+                          <p> * Separado de lotes, claves remisiones o facturas.  </p>
+                          <p> * Selección de producto </p>                                 <p> * Control de calidad</p>
+		              </div>
+	       </div>
+     </div>
+                
                </div>
            </div> <!--Termina S2 -->
 
@@ -131,26 +186,61 @@ Coordinación de principio a fin.
                </div>
 
                <div id="servtxt">
-                   <h3>SOLUCIONES PUERTA A PUERTA</h3>
-                </div>
+                   <a class="button" href="#popup1">SOLUCIONES PUERTA PUERTA</a>
+      <div id="popup1" class="overlay">
+          <div class="popup">
+		      <h2>SOLUCIONES PUERTA PUERTA</h2>
+		          <a class="close" href="#servicios">&times;</a>
+		              <div class="content">
+                          <p>
+                          Cubrimos las necesidades básicas de logística nacional e internacional, contando con una extensa red de corresponsales garantizando la seguridad y puntualidad en cualquier vía de transportación, cielo, mar y tierra nos aseguramos que su producto estará seguro y en tiempo.
+                          </p>                          
+                           <p>
+                            * Dedicados 
+                          </p> 
+                          <p> * Multimodal</p> 
+                          <p> * Información precisa </p>
+                          <p> * Técnica, JUST IN TIME. </p>                          
+		              </div>
+	       </div>
+     </div>
+                
+               </div>
            </div> <!--Termina S3 -->
 
-
+           </div><!--Termina columnna para los servicios en bootsrap-->
 
        </section> <!--Termina seccion servicios -->
+<!-------------GALERIA------------------------------------------------------------------->
+        
+        
+        
+       <section class="secciones" id="galeria"> <!--Inicia seccion galeria -->
+         <div class="barritas" id="c1"></div>
+         <div class="barritas" id="c2"></div>
+         <div id="c3">
+               <h1>GALERIA</h1>
+          </div>
 
+           <div>
+             <!-- Nav tabs -->
+             <ul class="nav nav-pills" role="tablist">
+               <li role="presentation" class="active"><a href="#flotilla" aria-controls="flotilla" role="tab" data-toggle="tab">FLOTILLA</a></li>
+               <li role="presentation"><a href="#camion15" aria-controls="camion15" role="tab" data-toggle="tab">CAMIÓN 1.5</a></li>
+               <li role="presentation"><a href="#camion35" aria-controls="camion35" role="tab" data-toggle="tab">CAMIÓN 3.5</a></li>
+               <li role="presentation"><a href="#torton" aria-controls="torton" role="tab" data-toggle="tab">TORTON</a></li>
+               <li role="presentation"><a href="#rabon" aria-controls="rabon" role="tab" data-toggle="tab">RABON</a></li>
+               <li role="presentation"><a href="#tractocamion" aria-controls="tractocamion" role="tab" data-toggle="tab">TRACTO CAMIÓN</a></li>
+               <li role="presentation"><a href="#trailer" aria-controls="trailer" role="tab" data-toggle="tab">TRAILER</a></li>
+             </ul>
 
-       <section id="galeria"> <!--Inicia seccion galeria -->
-           <div class="c1"></div>
-           <div class="c2"></div>
-           <div class="c3">
-                <h1>GALERIA</h1>
-           </div>
-
-           <div class="row"><!-- inicia el contenido de la galería -->
-                   <div id="galeria1" class="carousel slide col-md-10 col-md-offset-1" data-ride="carousel">
+             <!-- Tab panes -->
+             <div class="tab-content">
+               <div role="tabpanel" class="tab-pane active" id="flotilla">
+                   <div id="myCarousel" class="carousel slide" data-ride="carousel">
                          <!-- Wrapper for slides -->
                          <div class="carousel-inner">
+
                            <div class="item active">
                              <img src="img/camion-1125x413.jpg" alt="foto flotilla">
                               <div class="carousel-caption bg-caption-black">
@@ -175,28 +265,7 @@ Coordinación de principio a fin.
                            </div><!-- End Item -->
 
                            <div class="item">
-                             <img src="img/camion-1125x413.jpg" class="img-responsive" alt="foto flotilla">
-                              <div class="carousel-caption bg-caption-white-50">
-                                  <img src="img/justintime.png" alt="logo" />
-                             </div>
-                           </div><!-- End Item -->
-
-                           <div class="item">
-                             <img src="img/camion-1125x413.jpg" class="img-responsive" alt="foto rabon">
-                              <div class="carousel-caption bg-caption-white-50">
-                                  <img src="img/justintime.png" alt="logo" />
-                             </div>
-                           </div><!-- End Item -->
-
-                           <div class="item">
-                             <img src="img/camion-1125x413.jpg" class="img-responsive" alt="foto tracto camión">
-                              <div class="carousel-caption bg-caption-white-50">
-                                  <img src="img/justintime.png" alt="logo" />
-                             </div>
-                           </div><!-- End Item -->
-
-                           <div class="item">
-                             <img src="img/camion-1125x413.jpg" class="img-responsive" alt="foto trailer">
+                             <img src="img/camion-1125x413.jpg" alt="foto flotilla">
                               <div class="carousel-caption bg-caption-white-50">
                                   <img src="img/justintime.png" alt="logo" />
                              </div>
@@ -204,61 +273,40 @@ Coordinación de principio a fin.
 
                          </div><!-- End Carousel Inner -->
 
-                        <!-- miniaturas -->
-                        <div class="row miniaturas">
-                            <aside class="col-xs-6 col-sm-4 col-md-3 miniatura" data-target="#galeria1" data-slide-to="0"><a class="active" href="#">
-                                <img src="img/camion-280x103.jpg" class="img-responsive" alt="foto mini" />
-                                <div class="cover">
-                                    <h3>FLOTILLA</h3>
-                                </div>
-                            </a></aside>
-                            <aside class="col-xs-6 col-sm-4 col-md-3 miniatura" data-target="#galeria1" data-slide-to="1" class="active"><a href="#">
-                                <img src="img/camion-280x103.jpg" class="img-responsive" alt="foto mini" />
-                                <div class="cover">
-                                    <h3>CAMIÓN 1.5</h3>
-                                </div>
-                            </a></aside>
-                            <aside class="col-xs-6 col-sm-4 col-md-3 miniatura" data-target="#galeria1" data-slide-to="2" class="active"><a href="#">
-                                <img src="img/camion-280x103.jpg" class="img-responsive" alt="foto mini" />
-                                <div class="cover">
-                                    <h3>CAMIÓN 3.5</h3>
-                                </div>
-                            </a></aside>
-                            <aside class="col-xs-6 col-sm-4 col-md-3 miniatura" data-target="#galeria1" data-slide-to="3" class="active"><a href="#">
-                                <img src="img/camion-280x103.jpg" class="img-responsive" alt="foto mini" />
-                                <div class="cover">
-                                    <h3>TORTON</h3>
-                                </div>
-                            </a></aside>
-                            <aside class="col-xs-6 col-sm-4 col-md-3 miniatura" data-target="#galeria1" data-slide-to="4" class="active"><a href="#">
-                                <img src="img/camion-280x103.jpg" class="img-responsive" alt="foto mini" />
-                                <div class="cover">
-                                    <h3>RABON</h3>
-                                </div>
-                            </a></aside>
-                            <aside class="col-xs-6 col-sm-4 col-md-3 miniatura" data-target="#galeria1" data-slide-to="5" class="active"><a href="#">
-                                <img src="img/camion-280x103.jpg" class="img-responsive" alt="foto mini" />
-                                <div class="cover">
-                                    <h3>TRACTO CAMIÓN</h3>
-                                </div>
-                            </a></aside>
-                            <aside class="col-xs-6 col-sm-4 col-md-3 miniatura" data-target="#galeria1" data-slide-to="6" class="active"><a href="#">
-                                <img src="img/camion-280x103.jpg" class="img-responsive" alt="foto mini" />
-                                <div class="cover">
-                                    <h3>TRAILER</h3>
-                                </div>
-                            </a></aside>
-                        </div><!-- termina miniaturas -->
 
-                    </div><!-- End Carousel -->
+                   		<ul class="nav nav-pills nav-justified">
+                             <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">
+                                 <img src="img/camion-280x103.jpg" class="img-responsive" alt="foto mini" />
+                             </a></li>
+                             <li data-target="#myCarousel" data-slide-to="1"><a href="#">
+                                 <img src="img/camion-280x103.jpg" class="img-responsive" alt="foto mini" />
+                             </a></li>
+                             <li data-target="#myCarousel" data-slide-to="2"><a href="#">
+                                 <img src="img/camion-280x103.jpg" class="img-responsive" alt="foto mini" />
+                             </a></li>
+                             <li data-target="#myCarousel" data-slide-to="3"><a href="#">
+                                 <img src="img/camion-280x103.jpg" class="img-responsive" alt="foto mini" />
+                             </a></li>
+                           </ul>
 
-         </div><!-- termina div de la galería -->
+
+                       </div><!-- End Carousel -->
+               </div><!-- termina flotilla -->
+               <div role="tabpanel" class="tab-pane" id="camion15">Panel 2</div>
+               <div role="tabpanel" class="tab-pane" id="camion35">Panel 3</div>
+               <div role="tabpanel" class="tab-pane" id="torton">Panel 4</div>
+               <div role="tabpanel" class="tab-pane" id="rabon">Panel 5</div>
+               <div role="tabpanel" class="tab-pane" id="tractocamion">Panel 6</div>
+               <div role="tabpanel" class="tab-pane" id="trailer">Panel 7</div>
+             </div>
+
+           </div>
        </section> <!--Termina seccion galeria -->
 
-       <section id="alianzas"> <!--Inicia seccion alianzas -->
-            <div class="c1"></div>
-           <div class="c2"></div>
-           <div class="c3">
+       <section class="secciones" id="alianzas"> <!--Inicia seccion alianzas -->
+         <div class="barritas" id="c1"></div>
+         <div class="barritas" id="c2"></div>
+         <div id="c3">
                 <h1>ALIANZAS</h1>
            </div>
 
@@ -280,9 +328,9 @@ Coordinación de principio a fin.
        </section> <!-- ------------ Termina seccion alianzas ---------------->
 
        <section id="contacto"> <!-----------Inicia seccion contacto------->
-           <div class="c1"></div>
-           <div class="c2"></div>
-           <div class="c3">
+         <div class="barritas" id="c1"></div>
+         <div class="barritas" id="c2"></div>
+         <div id="c3">
                 <h1>CONTACTO</h1>
            </div>
 
@@ -329,7 +377,7 @@ Coordinación de principio a fin.
        </footer>
 
 
-   </div><!-- termina container -->
+   </div>
 
    <!-- zona de scripts o código javascript -->
    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -341,27 +389,32 @@ Coordinación de principio a fin.
     las miniaturas -->
     <script type="text/javascript">
         var clickEvent = false;
-        $('#galeria1').on('click', '.miniaturas a', function() {
+        $('#myCarousel').on('click', '.nav a', function() {
             clickEvent = true;
-            $('.miniaturas a').removeClass('active');
-            $(this).addClass('active');
+            $('.nav li').removeClass('active');
+            $(this).parent().addClass('active');
         }).on('slid.bs.carousel', function(e) {
             if(!clickEvent) {
-                var count = $('#galeria1 .miniaturas').children().length - 1;
-                var current = $('#galeria1 .miniaturas aside a.active');
+                var count = $('#myCarousel .nav').children().length - 1;
+                var current = $('#myCarousel .nav li.active');
 
-                current.removeClass('active');
-                current = current.parent();
-                current.next().children().first().addClass('active');
+                current.removeClass('active').next().addClass('active');
 
                 var id = parseInt(current.data('slide-to'));
 
                 if(count == id) {
-                    $('#galeria1 .miniaturas a').first().addClass('active');
+                    $('#myCarousel .nav li').first().addClass('active');
                 }
             }
             clickEvent = false;
         });
+        
     </script>
+    
+    
+    <!-- scripts nav --> 
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>     </script>
+
+        <script src="js/index.js"></script>
 </body>
 </html>

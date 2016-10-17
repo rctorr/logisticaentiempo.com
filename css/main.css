@@ -19,7 +19,7 @@ div#pagina {
 header {
     width: 100%;
     height: auto;
-    padding: 1px;
+    padding: 1px 0px;
     margin-top: 0px;
     margin-bottom: 0px;
     position: fixed;
@@ -40,98 +40,134 @@ div#logotipo {
 
 header img {
     margin: auto 0px;
-    padding: 15px;
+    padding: 15px ;
 }
 
+/*----------- Inicia NAV ---------*/
 
-/* ----------- Inicia NAV -------- */
 
-
-nav {
-    width: 100%;
+.nav{
+   width: 100%;
     height: auto;
-    background-color:#d6ad6b;
-}
-
-nav ul{
-    list-style: none;
-    text-align: center;
-    padding:0;
-    margin: auto 0px;
-    display: inline-block;
-}
-
-nav li {
-    width: 100px;
-    padding: 5px 0px;
+   float:left;
+   position: relative;
     background-color: #d6ad6b;
-    float: left;
-    margin: auto 0px;
-    font-size: 14px;
 }
 
-nav li a {
+.nav li{
+   float:left;
+}
+.nav li a{
+   float:left;
+   line-height: 30px;
+   padding:0px 20px;
+   font-size:16px;
+   color:#fff;
+    font-weight: 700;
     text-decoration: none;
-    color: #fff;
-    font-weight:800;
     -webkit-transition: all 800ms;
     -moz-transition: all 800ms;
     -ms-transition: all 800ms;
     -o-transition: all 800ms;
     transition: all 800ms;
+    
 }
 
-nav li a:hover, header span a:hover, footer a:hover {
+.nav li a:hover {
+     text-decoration: none;
+       color: #705839;   
+   }
+
+
+
+.toggle{
+   position: absolute;
+   top:25px;
+   right:15px;
+   width: 35px;
+   cursor:pointer;
+   display:none;
+}
+
+
+.toggle div{
+   width: 35px;
+   float:left;
+   height: 4px;
+   background-color: #39354c;
+   margin:3px 0;
+    
+}
+@media (max-width:1024px){
+   .toggle{
+      display:block;
+   }
+   header{
+      padding-top:80px;
+   }
+   .nav{
+      display:none;
+   }
+   .nav li{
+      width: 100%;
+   }
+   .nav li a{
+      width: 100%;
+      
+   }
+   .nav li a:hover {
+      text-decoration: none;
+       color: #705839;   
+   }
+}
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin:0;
+    padding:0px;
     text-decoration: none;
-    color: #705839;
+    list-style-type: none;
+    outline: none;
+}
+
+/*---------------- Formato general para las secciones ----------------------*/
+.secciones {
+  width: 100%;
+  height: 681px;
 }
 
 /*------- Inicia SECTION INICIO -----*/
 
-section#inicio{
-    width: 100%;
-    height: 600px;
-}
-
 iframe {
     width: 100%;
-    height: 600px;
+    height: 681px;
 }
 
 /*------- Inicia SECTION CONOCENOS---- */
 
 section#conocenos{
+
+}
+
+.barritas {
     width: 100%;
-    height: 600px;
-    background-color: #fff;
-}
-
-.somos, .ofrecemos, .benef{
-    width: 30%;
-    height: 200px;
-    display: inline-block;
-    padding: 15px 0px 50px 0px;
-    margin-top: 50px;
-
-}
-
-.c1,.c2 {
     height: 10px;
     margin-top: 0;
 }
 
-.c1 {
-    width: 100%;
+#c1 {
     background-color: #39354c;
 }
 
-.c2 {
-    width: 100%;
+#c2 {
     background-color: #2c5282;
-
 }
 
-.c3 {
+#c3 {
     width: 100%;
     height: 55px;
     background-color: #cccccc;
@@ -146,42 +182,58 @@ h1 {
     color: #39354c;
 }
 
-div#simg {
-    width: 100%;
-    height: 100px;
-    margin-top: 5px;
-}
-
-div#stxt{
-    width: 100%;
-    height: 100px;
-    margin-top: 0px;
-
-}
-
-hr {
-    background-color: black;
-    height: 3px;
-    width: 80%;
-    margin-top: -10px;
-}
-
 p {
     text-align: justify;
     padding: 0px 45px 0px 45px;
 }
 
-img#icsom, img#icofr, img#icoben {
-    width: auto;
-    height: 90px;
+/* Service Area */
+
+#serviceArea {
+    padding: 15px 0px 0px 0px;
+    position: relative;
 }
+
+#serviceArea .i-overlay {
+    width: 100px;
+    height: 100px;
+    margin: 15px auto;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+#serviceArea .service {
+    padding: 10px;
+    margin-top: 20%;
+    margin-bottom: 15%;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #ececec;
+    background: #f8f8f8;
+    -webkit-transition: 0.35s;
+    -moz-transition: 0.35s;
+    -o-transition: 0.35s;
+    transition: 0.35s;
+    height: 300px;
+}
+
+#serviceArea .service:hover {
+    background: #fff;
+    
+}
+
+h3 {
+    font-weight: 700;
+}
+
 
 
 /*------Inicia SECTION SERVICIOS-----*/
 
-section#servicios{
-    width: 100%;
-    height: 600px;
+section#servicios {
     background-color: #2c5282;
 }
 
@@ -213,11 +265,101 @@ div#servtxt {
     color: #fff;
 }
 
+
+
+.button {
+  font-size: 1.5em;
+    font-weight: 600;
+  padding: 10px;
+  color: #fff;
+    font-family: "Roboto";
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+    background-color: #d6ad6b;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #fff;
+  font-family: "Roboto";
+    font-weight: 700;
+    
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*------Inicia SECTION GALERIA-----*/
 
 section#galeria {
-    width: 100%;
-    height: 650px;
     background-color: #fff;
     position: relative;
 }
@@ -245,92 +387,30 @@ section#galeria {
     background-color: rgba(255,255,255,0.5);
 }
 
-#galeria1 {
-    margin-top: 1em;
-    margin-bottom: 1em;
+/* Esto es para hacer que el texto de las miniaturas se muestre como bloque */
+#myCarousel .nav a {
+	padding-left: 0;
+    padding-right: 0;
 }
-/* Para hacer que la imagen principal ocupe todo el ancho */
-#galeria1 .item img {
+
+#myCarousel .nav a img {
     width: 100%;
 }
 
-/* Clase para identificar una miniatura activa */
-#galeria1 .miniatura a {
-    border: 3px solid #fff;
-    display: block;
-    position: relative;
-    -ms-transition: border 750ms;
-    -webkit-transition: border 750ms;
-    -moz-transition: border 750ms;
-    -o-transition: border 750ms;
-    transition: border 750ms;
-}
-
-#galeria1 .miniatura a .cover {
-    -ms-transition: all 750ms;
-    -webkit-transition: all 750ms;
-    -o-transition: all 750ms;
-    -moz-transition: all 750ms;
-    transition: all 750ms;
-}
-
-#galeria1 .miniatura a .cover h3 {
-    -ms-transition: border 750ms;
-    -webkit-transition: border 750ms;
-    -o-transition: border 750ms;
-    -moz-transition: border 750ms;
-    transition: border 750ms;
-}
-
-#galeria1 .miniatura a:hover {
-    border-color: #ffaa22;
-}
-
-#galeria1 .miniatura a:hover .cover {
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.25);
-}
-
-#galeria1 .miniatura a:hover .cover h3 {
-    border-color: #fff;
-}
-
-#galeria1 .miniatura a.active {
-    border-color: #ffaa22;
-}
-
-#galeria1 .miniatura a.active .cover {
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.25);
-}
-
-#galeria1 .miniatura a.active .cover h3 {
-    border-color: #fff;
-}
-
-#galeria1 .miniatura a .cover {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: #ccc;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding-top: 1.5em;
-}
-
-#galeria1 .miniatura a .cover h3 {
-    display: inline-block;
-    font-size: 1.5em;
-    margin: 0;
-    border-bottom: 1px solid #ccc;
+@media (min-width: 768px) {
+  #myCarousel .nav-justified > li {
+    display: table-cell;
+    width: 1%;
+/*    float: left !important;*/
+  }
+  #myCarousel .nav-justified > li > a {
+    margin-bottom: 0;
+  }
 }
 
 /*------Inicia SECTION ALIANZAS -----*/
 
 section#alianzas {
-    width: 100%;
-    height: 600px;
     background-color: #fff;
 }
 
@@ -358,7 +438,6 @@ img#icoal {
 /*------Inicia SECTION CONTACTO -----*/
 
 section#contacto {
-    width: 100%;
     height: auto;
     background-color: #fff;
 }
@@ -380,8 +459,9 @@ p{
 }
 
 div#maps {
-    width: 100%;
+    width: 98%;
     height: auto;
+    margin: 1%;
 }
 
 input, textarea {
@@ -410,7 +490,3 @@ h5 {
 }
 
 /* Tuneado de Bootstrap */
-.center-block {
-    margin-left: auto;
-    margin-right: auto;
-}
