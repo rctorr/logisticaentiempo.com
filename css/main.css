@@ -23,6 +23,7 @@ header {
     margin-top: 0px;
     margin-bottom: 0px;
     position: fixed;
+    z-index: 99;
 }
 
 div#cazul {
@@ -58,7 +59,6 @@ header img {
    float:left;
 }
 .nav li a{
-   float:left;
    line-height: 30px;
    padding:0px 20px;
    font-size:16px;
@@ -70,54 +70,51 @@ header img {
     -ms-transition: all 800ms;
     -o-transition: all 800ms;
     transition: all 800ms;
-    
 }
 
 .nav li a:hover {
      text-decoration: none;
-       color: #705839;   
+       color: #705839;
    }
-
-
 
 .toggle{
    position: absolute;
-   top:25px;
+   top:35px;
    right:15px;
    width: 35px;
    cursor:pointer;
    display:none;
 }
 
-
 .toggle div{
    width: 35px;
-   float:left;
    height: 4px;
    background-color: #39354c;
-   margin:3px 0;
-    
+   margin: 5px 0;
 }
+
 @media (max-width:1024px){
-   .toggle{
+   .toggle {
       display:block;
    }
+   /*
    header{
       padding-top:80px;
    }
-   .nav{
-      display:none;
+   */
+   header div.nav {
+      display: none;
    }
    .nav li{
       width: 100%;
+      text-align: right;
    }
    .nav li a{
-      width: 100%;
-      
+      width: 150px;
    }
    .nav li a:hover {
       text-decoration: none;
-       color: #705839;   
+      color: #705839;
    }
 }
 
@@ -182,9 +179,8 @@ h1 {
     color: #39354c;
 }
 
-p {
-    text-align: justify;
-    padding: 0px 45px 0px 45px;
+#conocenos .service p {
+    padding: 0;
 }
 
 /* Service Area */
@@ -200,7 +196,7 @@ p {
     margin: 15px auto;
 }
 
-.img-responsive {
+#serviceArea .img-responsive {
     width: 100%;
     height: auto;
 }
@@ -217,16 +213,40 @@ p {
     -moz-transition: 0.35s;
     -o-transition: 0.35s;
     transition: 0.35s;
-    height: 300px;
+    height: 320px;
 }
 
 #serviceArea .service:hover {
     background: #fff;
-    
 }
 
 h3 {
     font-weight: 700;
+}
+
+@media screen and (max-width: 768px){
+    .secciones#conocenos {
+      height: 720px;
+    }
+
+    #serviceArea {
+        padding: 10px 0px 0px 0px;
+    }
+    #serviceArea .i-overlay {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+    #serviceArea .service {
+        padding: 10px;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        height: 200px;
+    }
+    #serviceArea .service h3 {
+        font-size: 1.5em;
+    }
+
 }
 
 
@@ -307,7 +327,7 @@ div#servtxt {
   color: #fff;
   font-family: "Roboto";
     font-weight: 700;
-    
+
 }
 .popup .close {
   position: absolute;
@@ -335,23 +355,6 @@ div#servtxt {
     width: 70%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
