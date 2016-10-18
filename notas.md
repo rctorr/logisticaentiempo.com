@@ -12,4 +12,10 @@
 
 4. En la sección de "Servicios"
 - Primero con la parte responsiva y lo primero es que no se puede usar un class "row" de bootstrap sin tener antes un elemento que tenga la clase "container", como lo hicieron en la sección anterior, así que lo agrego al html.
-- 
+- Luego uso los elementos de bootstrap para ubicar la imagen y texto para cada servicio
+- Agrego un media query para definir los cambios responsivos para dispositivos inferiores a 768px de ancho y inferiores a 991px de ancho.
+- He usdo las columnas de bootstrap para ubicar los 3 servicios y además para hacerlos responsivos
+- He usado los diálogos de bootstrap para mostrar la información extra de cada servicio.
+
+- FALTA maketar el contenido de los diálogos para que la información de cada servicio se muestre de forma más estética.
+- FALTA ajustar el resto de las secciones.

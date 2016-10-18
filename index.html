@@ -115,116 +115,120 @@
 
         <div class="container">
             <div class="row">
+              <!-- inicia un servicio -->
               <div class="col-sm-4">
-                <a href="#">
-                  <img class="img-circle img-responsive center-block" src="img/icoterr.png" alt="s1" />
-                </a>
-                <a class="center-block" href="#">
-                    <h3>TRANSPORTE TERRESTRE</h3>
-                </a>
+                <img class="img-circle img-responsive center-block" src="img/icoterr.png" alt="s1" />
+                <!-- Button para activar el modal -->
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#transporteModal">
+                  TRANSPORTE TERRESTRE
+                </button>
               </div>
-              <div class="col-sm-4">
-                <a href="#">
-                  <img class="img-circle img-responsive center-block" src="img/icoalm.png" alt="s2" />
-                </a>
-                <a class="center-block" href="#">
-                    <h3>ALMACEN Y DISTRIBUCIÓN</h3>
-                </a>
-              </div>
-              <div class="col-sm-4">
-                <a href="#">
-                  <img class="img-circle img-responsive center-block" src="img/icopta.png" alt="s3" />
-                </a>
-                <a class="center-block" href="#">
-                    <h3>SOLUCIONES PUERTA PUERTA</h3>
-                </a>
-              </div>
-          </div><!-- termina row -->
-
-
-            <div class="row"><!-- Inicia Columna para los servicios en bootsrap-->
-            <div class="s1">  <!--Inicia S1 -->
-                <div id="servtxt">
-                    <a class="button" href="#popup1">TRANSPORTE TERRESTRE</a>
-       <div id="popup1" class="overlay">
-           <div class="popup">
- 		      <h2>TRANSPORTE TERRESTRE</h2>
- 		          <a class="close" href="#servicios">&times;</a>
- 		              <div class="content">
-                           <p>
-                           Por que sabemos de su necesidad, JUST IN TIME LOGISTICS, Pone a su ordenes una flotilla de unidades modernas con personal calificado y certificado (R-CONTROL), impartiendo capacitaciones continuas a todo el personal.  Ofreciendo: </p>
-                        <p>* Gama de unidades 1.5ton, 3.5ton, Rabon, Thorton, Tractocamión, caja seca y refrigerada.</p>
-                         <p> * Seguros de carga </p>
-                         <p> * Rastreo satelital </p>
-                         <p> * Continua comunicación </p>                               <p> * Reportes vía correo y teléfono</p>
-                          <p> * Entrega de evidencias inmediata</p>
-                          <p> * Equipo básico en unidades (casco, chaleco reflejante, gogles, faja de carga, guantes y botas de seguridad).</p>
-                          <p> * Seguro social de los Operadores siempre vigente en las unidades</p>
-                          <p> * Certificado de fumigaciones </p>
-                          <p> * Placas Federales, cartas porte, bitácora de descansos, bitácoras de Mtto.</p>
-                          <p> * Thermograficadores  “red fría”</p>
-
- 		              </div>
- 	       </div>
-      </div>
-
-                </div>
-            </div> <!--Termina S1 -->
-
- <!-------------------------------------------------------------------------------->
-
-            <div class="s2"> <!--Inicia S2 -->
-                <div id="servtxt">
-                    <a class="button" href="#popup1">ALMACEN Y DISTRIBUCIÓN</a>
-       <div id="popup1" class="overlay">
-           <div class="popup">
- 		      <h2>ALMACEN Y DISTRIBUCIÓN</h2>
- 		          <a class="close" href="#servicios">&times;</a>
- 		              <div class="content">
-                           <p>
-                           Contamos con una solida alianza para poder almacenar su mercancía realizando el inventario de sus productos a distribuir con un alcance Nacional e internacional, de manera rápida eficiente y confiable siempre teniéndolo informado con estatus de sus envíos.
-                           </p>
-                            <p>
-                             * Inventario
-                           </p>
-                           <p> * Armado de surtido </p>
-                           <p> * Separado de lotes, claves remisiones o facturas.  </p>
-                           <p> * Selección de producto </p>                                 <p> * Control de calidad</p>
- 		              </div>
- 	       </div>
-      </div>
-
-                </div>
-            </div> <!--Termina S2 -->
-
- <!-------------------------------------------------------------------------------->
-
-            <div class="s3"> <!--Inicia S3 -->
-                <div id="servtxt">
-                    <a class="button" href="#popup1">SOLUCIONES PUERTA PUERTA</a>
-       <div id="popup1" class="overlay">
-           <div class="popup">
- 		      <h2>SOLUCIONES PUERTA PUERTA</h2>
- 		          <a class="close" href="#servicios">&times;</a>
- 		              <div class="content">
-                           <p>
-                           Cubrimos las necesidades básicas de logística nacional e internacional, contando con una extensa red de corresponsales garantizando la seguridad y puntualidad en cualquier vía de transportación, cielo, mar y tierra nos aseguramos que su producto estará seguro y en tiempo.
-                           </p>
-                            <p>
-                             * Dedicados
-                           </p>
-                           <p> * Multimodal</p>
-                           <p> * Información precisa </p>
-                           <p> * Técnica, JUST IN TIME. </p>
- 		                  </div>
- 	                   </div>
-                      </div>
-
+              <!-- Modal -->
+              <div class="modal fade" id="transporteModal" tabindex="-1" role="dialog" aria-labelledby="transporteModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="transporteModalLabel">TRANSPORTE TERRESTRE</h4>
                     </div>
-                </div> <!--Termina S3 -->
-            </div><!--Termina row para los servicios en bootsrap-->
-        </div><!-- termina container -->
-       </section> <!--Termina seccion servicios -->
+                    <div class="modal-body">
+                        <p>
+                        Por que sabemos de su necesidad, <strong>JUST IN TIME LOGISTICS</strong>, pone a su ordenes una flotilla de unidades modernas con personal calificado y certificado (R-CONTROL), impartiendo capacitaciones continuas a todo el personal.  Ofreciendo:</p>
+                        <ul>
+                            <li>Gama de unidades 1.5ton, 3.5ton, Rabon, Thorton, Tractocamión, caja seca y refrigerada</li>
+                            <li>Seguros de carga</li>
+                            <li>Rastreo satelital</li>
+                            <li>Continua comunicación</li>
+                           <li>Reportes vía correo y teléfono</li>
+                           <li>Entrega de evidencias inmediata</li>
+                           <li>Equipo básico en unidades (casco, chaleco reflejante, gogles, faja de carga, guantes y botas de seguridad)</li>
+                           <li>Seguro social de los Operadores siempre vigente en las unidades</li>
+                           <li>Certificado de fumigaciones</li>
+                           <li>Placas Federales, cartas porte, bitácora de descansos, bitácoras de Mtto.</li>
+                           <li>Termograficadores “red fría”</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+            </div><!-- termina Modal -->
+            <!-- termina servicio -->
+
+            <!-- inicia servicio -->
+            <div class="col-sm-4">
+              <img class="img-circle img-responsive center-block" src="img/icoalm.png" alt="s2" />
+              <!-- Button para activar el modal -->
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#almacenModal">
+                ALMACEN Y DISTRIBUCIÓN
+              </button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="almacenModal" tabindex="-1" role="dialog" aria-labelledby="almacenModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="almacenModalLabel">ALMACEN Y DISTRIBUCIÓN</h4>
+                  </div>
+                  <div class="modal-body">
+                      <p>
+                      Contamos con una solida alianza para poder almacenar su mercancía realizando el inventario de sus productos a distribuir con un alcance Nacional e internacional, de manera rápida eficiente y confiable siempre teniéndolo informado con estatus de sus envíos.
+                      </p>
+                       <p>
+                        * Inventario
+                      </p>
+                      <p> * Armado de surtido </p>
+                      <p> * Separado de lotes, claves remisiones o facturas.  </p>
+                      <p> * Selección de producto </p>                                 <p> * Control de calidad</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+          </div><!-- termina Modal -->
+          <!-- termina servicio -->
+
+          <!-- inicia servicio -->
+          <div class="col-sm-4">
+            <img class="img-circle img-responsive center-block" src="img/icopta.png" alt="s3" />
+            <!-- Button para activar el modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#puertaModal">
+              SOLUCIONES PUERTA PUERTA
+            </button>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="puertaModal" tabindex="-1" role="dialog" aria-labelledby="puertaModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="puertaModalLabel">SOLUCIONES PUERTA PUERTA</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                    Cubrimos las necesidades básicas de logística nacional e internacional, contando con una extensa red de corresponsales garantizando la seguridad y puntualidad en cualquier vía de transportación, cielo, mar y tierra nos aseguramos que su producto estará seguro y en tiempo.
+                    </p>
+                     <p>
+                      * Dedicados
+                    </p>
+                    <p> * Multimodal</p>
+                    <p> * Información precisa </p>
+                    <p> * Técnica, JUST IN TIME. </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+        </div><!-- termina Modal -->
+        <!-- termina servicio -->
+    </div><!-- termina row -->
+</div><!-- termina container -->
+</section><!-- termina Servicios -->
+
 <!-------------GALERIA------------------------------------------------------------------->
 
 
@@ -424,7 +428,6 @@
         });
 
     </script>
-
 
     <!-- scripts nav -->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>     </script>
